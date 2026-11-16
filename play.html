@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sort Game | SortRight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVBAR ===== -->
+  <header id="main-header">
+    <a class="logo" href="index.html"><span>♻</span> SortRight</a>
+    <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guide.html">Waste Guide</a></li>
+      <li><a href="play.html" class="active">Sort Game</a></li>
+    </ul>
+    <button id="menu-btn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Sort the waste</h2>
+      <p>You have 60 seconds. Drag the item into the right bin. Correct: +2s. Wrong: -5s.</p>
+      <button class="btn" id="start">Start game</button>
+      <div id="play-area" style="display:none">
+        <div id="hud">
+          <div>⏱ <span id="time">60</span>s</div><div>⭐ <span id="score">0</span></div>
+          <div>🔥 Streak <span id="streak">0</span></div><div>🏆 Best <span id="best">0</span></div>
+        </div>
+        <div id="drag" title="Drag me into a bin"><div id="item">❔</div></div>
+        <div id="item-name"></div>
+        <p id="hint">Drag the item into the correct bin. Tapping the bins does nothing.</p>
+        <div id="bins"></div>
+        <div id="feedback"></div>
+      </div>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="main-footer">
+    <p>&copy; 2026 SortRight. Sort smart, waste less.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

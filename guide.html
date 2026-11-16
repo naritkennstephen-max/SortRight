@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Guide | SortRight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVBAR ===== -->
+  <header id="main-header">
+    <a class="logo" href="index.html"><span>♻</span> SortRight</a>
+    <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guide.html" class="active">Waste Guide</a></li>
+      <li><a href="play.html">Sort Game</a></li>
+    </ul>
+    <button id="menu-btn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Waste guide</h2>
+      <p>Search for an item or pick a bin to filter. Local rules can differ, so check with your barangay or city.</p>
+      <div class="tools">
+        <input id="search" type="search" placeholder="Search, e.g. battery" aria-label="Search items">
+        <div id="chips" class="tools"></div>
+      </div>
+      <div id="guide-list"></div>
+      <p id="empty">No match yet. Try a shorter word like "can" or "paper".</p>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="main-footer">
+    <p>&copy; 2026 SortRight. Sort smart, waste less.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/guide.js"></script>
+</body>
+</html>

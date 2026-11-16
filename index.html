@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | SortRight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVBAR ===== -->
+  <header id="main-header">
+    <a class="logo" href="index.html"><span>♻</span> SortRight</a>
+    <ul id="navbar">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guide.html">Waste Guide</a></li>
+      <li><a href="play.html">Sort Game</a></li>
+    </ul>
+    <button id="menu-btn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div>
+        <h1>Put every piece of waste where it belongs</h1>
+        <p>SortRight helps families and students in our community learn which bin to use, with a quick guide and a game that makes sorting a habit.</p>
+        <a class="btn" href="play.html">Play the sort game</a>
+        <a class="btn alt" href="guide.html">Open the guide</a>
+      </div>
+      <div id="stage" aria-hidden="true">
+        <span class="drop d1">🍌</span><span class="drop d2">🧴</span><span class="drop d3">🔋</span><span class="drop d4">🍟</span>
+        <div class="bin b1">🌱</div><div class="bin b2">♻️</div><div class="bin b3">🗑️</div><div class="bin b4">⚠️</div>
+      </div>
+    </section>
+
+    <!-- ===== PROMO VIDEO ===== -->
+    <section class="section promo reveal">
+      <h2>SortRight intro</h2>
+      <p>A 12-second introduction to SortRight.</p>
+      <video controls preload="metadata" playsinline>
+        <source src="video/promo.mp4" type="video/mp4">
+        Your browser can't play this video.
+      </video>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="section reveal">
+      <div class="stats">
+        <div class="stat"><b data-count="4">0</b>bins to master</div>
+        <div class="stat"><b data-items data-count="0">0</b>items in the guide</div>
+        <div class="stat"><b data-count="60" data-suffix="s">0</b>per game round</div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="section reveal">
+      <h2>What you can do</h2>
+      <p>Three ways to learn, all in your browser.</p>
+      <div class="card-container">
+        <div class="card"><span class="em">🔎</span><h3>Search the guide</h3><p>Type an item and see its bin plus a disposal tip.</p><a href="guide.html">Open the guide</a></div>
+        <div class="card"><span class="em">🎮</span><h3>Beat your best score</h3><p>Sort items before time runs out. Streaks earn bonus points.</p><a href="play.html">Start playing</a></div>
+        <div class="card"><span class="em">✅</span><h3>Keep a daily pledge</h3><p>Tap once a day to count your sorting days. Saved on this device.</p><a href="#pledge">Take today's pledge</a></div>
+      </div>
+    </section>
+
+    <!-- ===== DAILY PLEDGE ===== -->
+    <section class="section reveal">
+      <div id="pledge">
+        <h2>Today's pledge</h2>
+        <p id="pledge-count"></p>
+        <button class="btn" id="pledge-btn">I sorted my waste today</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="main-footer">
+    <p>&copy; 2026 SortRight. Sort smart, waste less.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/effects.js"></script>
+</body>
+</html>
